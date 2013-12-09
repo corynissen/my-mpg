@@ -64,7 +64,8 @@ fuel <- fuel[-1,]
 
 # traditional way of showing pattern in two series...
 p1 <- ggplot(fuel, aes(x=avg.temp, y=mpg)) + geom_point() + 
-  geom_smooth(method = lm, se=FALSE) + xlab("AVG Temp") + ylab("MPG")
+  geom_smooth(method = lm, se=FALSE) + xlab("AVG Temp") + ylab("MPG") + 
+  theme_bw()
 ggsave(plot=p1, "tempBYmpg.jpg")
 
 # the taboo way of doing it, two series on same graph...
