@@ -69,6 +69,7 @@ p1 <- ggplot(fuel, aes(x=avg.temp, y=mpg)) + geom_point() +
 ggsave(plot=p1, "tempBYmpg.jpg")
 
 # the taboo way of doing it, two series on same graph...
+# code adapted from... http://rpubs.com/kohske/dual_axis_in_ggplot2
 grid.newpage()
 
 # two plots
