@@ -1,0 +1,312 @@
+<!-- PIL: 'CLI' Site ID: 'ORD' Recent: 'yes' Date: '' Specdate: '' -->
+
+<html>
+<head>
+    <title>National Weather Service - Climate Data</title>
+    <style>
+    select {
+        background-color: #FFFFB3;
+    }
+    </style>
+    <script language="JavaScript">
+    function swapURL() {
+        // make sure a new date was chosen
+        if (document.myProd.specdate.options[document.myProd.specdate.selectedIndex].value != "") {
+            // all good
+            // return true;
+            document.myProd.submit();
+        } else {
+            alert("Please chhose a valid date/time first.");
+            return false;
+        }
+    }
+    </script>
+</head>
+
+        <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td bgcolor="#A4A9FF">
+
+            <table cellspacing="0" cellpadding="10" border="1" bgcolor="#A4A9FF">
+            <form name="myProd" action="/climate/getclimate.php" method="get">
+            <input type="hidden" name="date" value="" />
+            <input type="hidden" name="wfo" value="lot" />
+            <input type="hidden" name="sid" value="ORD" />
+            <input type="hidden" name="pil" value="CLI" />
+            <input type="hidden" name="recent" value="yes" />
+            <tr>
+                <td>
+                <select name="specdate" onChange="return swapURL()">
+                    <option value="" selected> Select Other Date</option>
+                    <option value="2013-03-09 06:34:47"> Mar 9th, 2013 00:34:47 CST</option>
+<option value="2013-03-09 22:41:00"> Mar 9th, 2013 16:41:00 CST</option>
+<option value="2013-03-09 22:41:54"> Mar 9th, 2013 16:41:54 CST</option>
+<option value="2013-03-10 06:33:26"> Mar 10th, 2013 00:33:26 CST</option>
+<option value="2013-03-10 06:33:41"> Mar 10th, 2013 00:33:41 CST</option>
+<option value="2013-03-10 21:46:45"> Mar 10th, 2013 16:46:45 CDT</option>
+<option value="2013-03-10 21:46:58"> Mar 10th, 2013 16:46:58 CDT</option>
+<option value="2013-03-10 21:49:19"> Mar 10th, 2013 16:49:19 CDT</option>
+<option value="2013-03-10 21:49:54"> Mar 10th, 2013 16:49:54 CDT</option>
+<option value="2013-03-10 22:51:37"> Mar 10th, 2013 17:51:37 CDT</option>
+<option value="2013-03-10 22:51:39"> Mar 10th, 2013 17:51:39 CDT</option>
+<option value="2013-03-10 23:24:23"> Mar 10th, 2013 18:24:23 CDT</option>
+<option value="2013-03-10 23:24:57"> Mar 10th, 2013 18:24:57 CDT</option>
+<option value="2013-03-11 06:37:17"> Mar 11th, 2013 01:37:17 CDT</option>
+<option value="2013-03-11 06:37:19"> Mar 11th, 2013 01:37:19 CDT</option>
+<option value="2013-03-11 21:35:18"> Mar 11th, 2013 16:35:18 CDT</option>
+<option value="2013-03-12 06:46:15"> Mar 12th, 2013 01:46:15 CDT</option>
+<option value="2013-03-12 21:34:05"> Mar 12th, 2013 16:34:05 CDT</option>
+<option value="2013-03-13 06:36:59"> Mar 13th, 2013 01:36:59 CDT</option>
+<option value="2013-03-13 21:43:31"> Mar 13th, 2013 16:43:31 CDT</option>
+<option value="2013-03-14 06:46:31"> Mar 14th, 2013 01:46:31 CDT</option>
+<option value="2013-03-14 21:50:15"> Mar 14th, 2013 16:50:15 CDT</option>
+<option value="2013-03-15 06:32:09"> Mar 15th, 2013 01:32:09 CDT</option>
+<option value="2013-03-15 21:45:38"> Mar 15th, 2013 16:45:38 CDT</option>
+<option value="2013-03-16 06:37:06"> Mar 16th, 2013 01:37:06 CDT</option>
+<option value="2013-03-16 21:49:39"> Mar 16th, 2013 16:49:39 CDT</option>
+<option value="2013-03-17 06:40:21"> Mar 17th, 2013 01:40:21 CDT</option>
+<option value="2013-03-17 21:42:58"> Mar 17th, 2013 16:42:58 CDT</option>
+<option value="2013-03-18 06:35:59"> Mar 18th, 2013 01:35:59 CDT</option>
+<option value="2013-03-18 21:49:00"> Mar 18th, 2013 16:49:00 CDT</option>
+<option value="2013-03-19 06:38:13"> Mar 19th, 2013 01:38:13 CDT</option>
+<option value="2013-03-19 21:45:49"> Mar 19th, 2013 16:45:49 CDT</option>
+<option value="2013-03-20 06:39:30"> Mar 20th, 2013 01:39:30 CDT</option>
+<option value="2013-03-20 21:37:32"> Mar 20th, 2013 16:37:32 CDT</option>
+<option value="2013-03-21 06:38:55"> Mar 21st, 2013 01:38:55 CDT</option>
+<option value="2013-03-21 21:47:01"> Mar 21st, 2013 16:47:01 CDT</option>
+<option value="2013-03-22 06:36:40"> Mar 22nd, 2013 01:36:40 CDT</option>
+<option value="2013-03-22 21:50:14"> Mar 22nd, 2013 16:50:14 CDT</option>
+<option value="2013-03-23 06:50:06"> Mar 23rd, 2013 01:50:06 CDT</option>
+<option value="2013-03-23 06:55:35"> Mar 23rd, 2013 01:55:35 CDT</option>
+<option value="2013-03-23 21:40:28"> Mar 23rd, 2013 16:40:28 CDT</option>
+<option value="2013-03-24 06:38:49"> Mar 24th, 2013 01:38:49 CDT</option>
+<option value="2013-03-24 21:44:23"> Mar 24th, 2013 16:44:23 CDT</option>
+<option value="2013-03-25 06:52:11"> Mar 25th, 2013 01:52:11 CDT</option>
+<option value="2013-03-25 21:42:08"> Mar 25th, 2013 16:42:08 CDT</option>
+<option value="2013-03-26 06:49:22"> Mar 26th, 2013 01:49:22 CDT</option>
+<option value="2013-03-26 21:43:06"> Mar 26th, 2013 16:43:06 CDT</option>
+<option value="2013-03-27 06:36:37"> Mar 27th, 2013 01:36:37 CDT</option>
+<option value="2013-03-27 21:33:48"> Mar 27th, 2013 16:33:48 CDT</option>
+<option value="2013-03-28 06:45:54"> Mar 28th, 2013 01:45:54 CDT</option>
+<option value="2013-03-28 21:48:37"> Mar 28th, 2013 16:48:37 CDT</option>
+<option value="2013-03-29 06:32:50"> Mar 29th, 2013 01:32:50 CDT</option>
+<option value="2013-03-29 21:48:14"> Mar 29th, 2013 16:48:14 CDT</option>
+<option value="2013-03-30 06:32:56"> Mar 30th, 2013 01:32:56 CDT</option>
+<option value="2013-03-30 21:43:15"> Mar 30th, 2013 16:43:15 CDT</option>
+<option value="2013-03-31 06:32:01"> Mar 31st, 2013 01:32:01 CDT</option>
+<option value="2013-03-31 21:45:59"> Mar 31st, 2013 16:45:59 CDT</option>
+<option value="2013-04-01 06:37:59"> Apr 1st, 2013 01:37:59 CDT</option>
+<option value="2013-04-01 21:45:57"> Apr 1st, 2013 16:45:57 CDT</option>
+<option value="2013-04-02 06:34:22"> Apr 2nd, 2013 01:34:22 CDT</option>
+<option value="2013-04-02 21:48:48"> Apr 2nd, 2013 16:48:48 CDT</option>
+<option value="2013-04-03 06:34:26"> Apr 3rd, 2013 01:34:26 CDT</option>
+<option value="2013-04-03 21:40:43"> Apr 3rd, 2013 16:40:43 CDT</option>
+<option value="2013-04-04 06:34:41"> Apr 4th, 2013 01:34:41 CDT</option>
+<option value="2013-04-04 21:42:50"> Apr 4th, 2013 16:42:50 CDT</option>
+<option value="2013-04-05 06:36:42"> Apr 5th, 2013 01:36:42 CDT</option>
+<option value="2013-04-05 21:32:38"> Apr 5th, 2013 16:32:38 CDT</option>
+<option value="2013-04-06 06:31:25"> Apr 6th, 2013 01:31:25 CDT</option>
+<option value="2013-04-06 21:42:21"> Apr 6th, 2013 16:42:21 CDT</option>
+<option value="2013-04-07 06:50:31"> Apr 7th, 2013 01:50:31 CDT</option>
+<option value="2013-04-07 21:48:23"> Apr 7th, 2013 16:48:23 CDT</option>
+<option value="2013-04-08 06:35:52"> Apr 8th, 2013 01:35:52 CDT</option>
+<option value="2013-04-08 21:46:52"> Apr 8th, 2013 16:46:52 CDT</option>
+<option value="2013-04-09 06:39:55"> Apr 9th, 2013 01:39:55 CDT</option>
+<option value="2013-04-09 21:48:33"> Apr 9th, 2013 16:48:33 CDT</option>
+<option value="2013-04-10 06:36:33"> Apr 10th, 2013 01:36:33 CDT</option>
+<option value="2013-04-10 21:45:53"> Apr 10th, 2013 16:45:53 CDT</option>
+<option value="2013-04-11 06:39:19"> Apr 11th, 2013 01:39:19 CDT</option>
+<option value="2013-04-11 21:52:19"> Apr 11th, 2013 16:52:19 CDT</option>
+<option value="2013-04-12 06:33:39"> Apr 12th, 2013 01:33:39 CDT</option>
+<option value="2013-04-12 21:48:34"> Apr 12th, 2013 16:48:34 CDT</option>
+<option value="2013-04-13 06:37:05"> Apr 13th, 2013 01:37:05 CDT</option>
+<option value="2013-04-13 21:41:50"> Apr 13th, 2013 16:41:50 CDT</option>
+<option value="2013-04-14 06:39:45"> Apr 14th, 2013 01:39:45 CDT</option>
+<option value="2013-04-14 21:43:56"> Apr 14th, 2013 16:43:56 CDT</option>
+<option value="2013-04-15 06:33:11"> Apr 15th, 2013 01:33:11 CDT</option>
+<option value="2013-04-15 21:34:55"> Apr 15th, 2013 16:34:55 CDT</option>
+<option value="2013-04-16 06:40:33"> Apr 16th, 2013 01:40:33 CDT</option>
+<option value="2013-04-16 21:37:55"> Apr 16th, 2013 16:37:55 CDT</option>
+<option value="2013-04-17 06:35:21"> Apr 17th, 2013 01:35:21 CDT</option>
+<option value="2013-04-17 21:47:15"> Apr 17th, 2013 16:47:15 CDT</option>
+<option value="2013-04-18 06:36:07"> Apr 18th, 2013 01:36:07 CDT</option>
+<option value="2013-04-18 21:53:38"> Apr 18th, 2013 16:53:38 CDT</option>
+<option value="2013-04-19 06:39:48"> Apr 19th, 2013 01:39:48 CDT</option>
+<option value="2013-04-19 21:50:47"> Apr 19th, 2013 16:50:47 CDT</option>
+<option value="2013-04-20 06:31:07"> Apr 20th, 2013 01:31:07 CDT</option>
+<option value="2013-04-20 21:40:24"> Apr 20th, 2013 16:40:24 CDT</option>
+<option value="2013-04-21 06:34:19"> Apr 21st, 2013 01:34:19 CDT</option>
+<option value="2013-04-21 21:49:48"> Apr 21st, 2013 16:49:48 CDT</option>
+<option value="2013-04-22 06:38:35"> Apr 22nd, 2013 01:38:35 CDT</option>
+<option value="2013-04-22 21:35:40"> Apr 22nd, 2013 16:35:40 CDT</option>
+<option value="2013-04-23 06:38:12"> Apr 23rd, 2013 01:38:12 CDT</option>
+<option value="2013-04-23 21:39:17"> Apr 23rd, 2013 16:39:17 CDT</option>
+<option value="2013-04-24 06:36:22"> Apr 24th, 2013 01:36:22 CDT</option>
+<option value="2013-04-24 11:29:48"> Apr 24th, 2013 06:29:48 CDT</option>
+<option value="2013-04-24 21:42:48"> Apr 24th, 2013 16:42:48 CDT</option>
+<option value="2013-04-25 06:33:42"> Apr 25th, 2013 01:33:42 CDT</option>
+<option value="2013-04-25 21:42:51"> Apr 25th, 2013 16:42:51 CDT</option>
+<option value="2013-04-26 06:35:30"> Apr 26th, 2013 01:35:30 CDT</option>
+<option value="2013-04-26 21:39:49"> Apr 26th, 2013 16:39:49 CDT</option>
+<option value="2013-04-27 06:36:21"> Apr 27th, 2013 01:36:21 CDT</option>
+<option value="2013-04-27 21:43:53"> Apr 27th, 2013 16:43:53 CDT</option>
+<option value="2013-04-28 06:36:17"> Apr 28th, 2013 01:36:17 CDT</option>
+<option value="2013-04-28 21:47:12"> Apr 28th, 2013 16:47:12 CDT</option>
+<option value="2013-04-29 06:36:25"> Apr 29th, 2013 01:36:25 CDT</option>
+<option value="2013-04-29 21:42:23"> Apr 29th, 2013 16:42:23 CDT</option>
+<option value="2013-04-30 06:37:36"> Apr 30th, 2013 01:37:36 CDT</option>
+<option value="2013-04-30 21:41:45"> Apr 30th, 2013 16:41:45 CDT</option>
+<option value="2013-05-01 06:44:08"> May 1st, 2013 01:44:08 CDT</option>
+<option value="2013-05-01 21:34:54"> May 1st, 2013 16:34:54 CDT</option>
+<option value="2013-05-02 06:37:14"> May 2nd, 2013 01:37:14 CDT</option>
+<option value="2013-05-02 21:47:38"> May 2nd, 2013 16:47:38 CDT</option>
+<option value="2013-05-03 06:40:21"> May 3rd, 2013 01:40:21 CDT</option>
+<option value="2013-05-03 21:47:48"> May 3rd, 2013 16:47:48 CDT</option>
+<option value="2013-05-04 06:36:50"> May 4th, 2013 01:36:50 CDT</option>
+<option value="2013-05-04 21:45:07"> May 4th, 2013 16:45:07 CDT</option>
+<option value="2013-05-05 06:33:15"> May 5th, 2013 01:33:15 CDT</option>
+<option value="2013-05-05 21:40:10"> May 5th, 2013 16:40:10 CDT</option>
+<option value="2013-05-06 06:37:21"> May 6th, 2013 01:37:21 CDT</option>
+<option value="2013-05-06 21:41:59"> May 6th, 2013 16:41:59 CDT</option>
+<option value="2013-05-07 06:34:41"> May 7th, 2013 01:34:41 CDT</option>
+<option value="2013-05-07 21:48:59"> May 7th, 2013 16:48:59 CDT</option>
+                </select>
+                </td>
+            </tr>
+            </form>
+            </table>
+
+            </td>
+                    </tr>
+        </table>
+
+        <hr />
+        <!-- No date specified -->
+<!-- 2013-05-07 21:48:59 -->
+
+<font size=4><b>
+These data are preliminary and have not undergone final quality control by the National Climatic Data Center (NCDC). Therefore, these data are subject to revision. Final and certified climate data can be accessed at the NCDC -
+<a href="http://www.ncdc.noaa.gov" target="_new" title="National Climatic Data Center (NCDC)">http://www.ncdc.noaa.gov</a>.
+</b></font>
+
+<h3>Climatological Report (Daily)</h3>
+<pre><font size=3>
+000
+CDUS43 KLOT 072148
+CLIORD
+
+
+CLIMATE REPORT
+NATIONAL WEATHER SERVICE CHICAGO IL
+443 PM CDT TUE MAY 7 2013
+
+
+...................................
+
+...THE CHICAGO-OHARE IL CLIMATE SUMMARY FOR MAY 7 2013...
+VALID TODAY AS OF 0400 PM LOCAL TIME.
+
+CLIMATE NORMAL PERIOD 1981 TO 2010
+CLIMATE RECORD PERIOD 1871 TO 2013
+
+
+WEATHER ITEM   OBSERVED TIME   RECORD YEAR NORMAL DEPARTURE LAST
+                VALUE   (LST)  VALUE       VALUE  FROM      YEAR
+                                                  NORMAL
+..................................................................
+TEMPERATURE (F)
+ TODAY
+  MAXIMUM         75    259 PM  87    1964  67      8       64
+                                      1936
+  MINIMUM         48    500 AM  29    1989  46      2       52
+  AVERAGE         62                        56      6       58
+
+PRECIPITATION (IN)
+  TODAY            0.00          2.07 1998   0.12  -0.12     0.47
+  MONTH TO DATE    0.18                      0.81  -0.63     2.98
+  SINCE MAR 1     10.86                      6.69   4.17     7.31
+  SINCE JAN 1     17.45                     10.21   7.24    10.81
+
+SNOWFALL (IN)
+  TODAY            0.0           T    1947   0.0    0.0      0.0
+                                      1960
+                                      1989
+  MONTH TO DATE    0.0                       0.0    0.0       T
+  SINCE MAR 1     10.5                       6.8    3.7      0.3
+  SINCE JUL 1     30.1                      36.3   -6.2     19.8
+
+DEGREE DAYS
+ HEATING
+  TODAY            3                         9     -6        7
+  MONTH TO DATE   55                        71    -16       29
+  SINCE MAR 1   1591                      1404    187      846
+  SINCE JUL 1   5993                      6138   -145     4819
+
+ COOLING
+  TODAY            0                         1     -1        0
+  MONTH TO DATE    5                         5      0       15
+  SINCE MAR 1     13                        15     -2       58
+  SINCE JAN 1     13                        15     -2       58
+..................................................................
+
+
+WIND (MPH)
+  HIGHEST WIND SPEED    12   HIGHEST WIND DIRECTION     E (100)
+  HIGHEST GUST SPEED    23   HIGHEST GUST DIRECTION     E (70)
+  AVERAGE WIND SPEED     5.6
+
+
+SKY COVER
+  POSSIBLE SUNSHINE  MM
+  AVERAGE SKY COVER 0.5
+
+
+WEATHER CONDITIONS
+ THE FOLLOWING WEATHER WAS RECORDED TODAY.
+  NO SIGNIFICANT WEATHER WAS OBSERVED.
+
+
+RELATIVE HUMIDITY (PERCENT)
+ HIGHEST    71           500 AM
+ LOWEST     31           200 PM
+ AVERAGE    51
+
+..........................................................
+
+
+THE CHICAGO-OHARE IL CLIMATE NORMALS FOR TOMORROW
+                         NORMAL    RECORD    YEAR
+ MAXIMUM TEMPERATURE (F)   68        91      1963
+ MINIMUM TEMPERATURE (F)   46        29      1983
+
+
+SUNRISE AND SUNSET
+MAY  7 2013...........SUNRISE   540 AM CDT   SUNSET   757 PM CDT
+MAY  8 2013...........SUNRISE   539 AM CDT   SUNSET   758 PM CDT
+
+
+-  INDICATES NEGATIVE NUMBERS.
+R  INDICATES RECORD WAS SET OR TIED.
+MM INDICATES DATA IS MISSING.
+T  INDICATES TRACE AMOUNT.
+
+
+
+
+<hr />
+
+
+
+
+</font></pre>
+
+
+<font size=4>
+The U.S. Naval Observatory (USNO) computes astronomical data. Therefore, the NWS does not record, certify, or authenticate astronomical data. Computed times of sunrise, sunset, moonrise, moonset; and twilight, moon phases and other astronomical data are available from USNO's Astronomical Applications Department (http://www.usno.navy.mil). See <a href="http://weather.gov/cgi-bin/nwsexit.pl?url=http://www.usno.navy.mil/USNO/astronomical-applications/astronomical-information-center/litigation">http://www.usno.navy.mil/USNO/astronomical-applications/astronomical-information-center/litigation</a> for information on using these data for legal purposes.</font>
+
+
+    <!-- Page loaded in 0.069 seconds -->
+
+
+</body>
+</html>

@@ -3,3 +3,8 @@
 
 # Example code in package build process
 *-Ex.R
+.Rproj.user
+.Rproj
+
+# just some scp code to get my temp data off of my server
+getObserved.txt

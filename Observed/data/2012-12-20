@@ -1,0 +1,312 @@
+<!-- PIL: 'CLI' Site ID: 'ORD' Recent: 'yes' Date: '' Specdate: '' -->
+
+<html>
+<head>
+    <title>National Weather Service - Climate Data</title>
+    <style>
+    select {
+        background-color: #FFFFB3;
+    }
+    </style>
+    <script language="JavaScript">
+    function swapURL() {
+        // make sure a new date was chosen
+        if (document.myProd.specdate.options[document.myProd.specdate.selectedIndex].value != "") {
+            // all good
+            // return true;
+            document.myProd.submit();
+        } else {
+            alert("Please chhose a valid date/time first.");
+            return false;
+        }
+    }
+    </script>
+</head>
+
+        <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td bgcolor="#A4A9FF">
+
+            <table cellspacing="0" cellpadding="10" border="1" bgcolor="#A4A9FF">
+            <form name="myProd" action="/climate/getclimate.php" method="get">
+            <input type="hidden" name="date" value="" />
+            <input type="hidden" name="wfo" value="lot" />
+            <input type="hidden" name="sid" value="ORD" />
+            <input type="hidden" name="pil" value="CLI" />
+            <input type="hidden" name="recent" value="yes" />
+            <tr>
+                <td>
+                <select name="specdate" onChange="return swapURL()">
+                    <option value="" selected> Select Other Date</option>
+                    <option value="2012-10-22 06:35:25"> Oct 22nd, 2012 01:35:25 CDT</option>
+<option value="2012-10-22 21:47:41"> Oct 22nd, 2012 16:47:41 CDT</option>
+<option value="2012-10-23 06:41:19"> Oct 23rd, 2012 01:41:19 CDT</option>
+<option value="2012-10-23 21:46:11"> Oct 23rd, 2012 16:46:11 CDT</option>
+<option value="2012-10-24 06:36:29"> Oct 24th, 2012 01:36:29 CDT</option>
+<option value="2012-10-24 21:47:44"> Oct 24th, 2012 16:47:44 CDT</option>
+<option value="2012-10-25 06:43:34"> Oct 25th, 2012 01:43:34 CDT</option>
+<option value="2012-10-25 21:47:57"> Oct 25th, 2012 16:47:57 CDT</option>
+<option value="2012-10-26 06:50:51"> Oct 26th, 2012 01:50:51 CDT</option>
+<option value="2012-10-26 06:54:24"> Oct 26th, 2012 01:54:24 CDT</option>
+<option value="2012-10-26 21:35:15"> Oct 26th, 2012 16:35:15 CDT</option>
+<option value="2012-10-27 06:32:19"> Oct 27th, 2012 01:32:19 CDT</option>
+<option value="2012-10-27 21:46:51"> Oct 27th, 2012 16:46:51 CDT</option>
+<option value="2012-10-28 06:37:47"> Oct 28th, 2012 01:37:47 CDT</option>
+<option value="2012-10-28 21:47:46"> Oct 28th, 2012 16:47:46 CDT</option>
+<option value="2012-10-29 06:32:11"> Oct 29th, 2012 01:32:11 CDT</option>
+<option value="2012-10-29 21:36:36"> Oct 29th, 2012 16:36:36 CDT</option>
+<option value="2012-10-30 06:34:14"> Oct 30th, 2012 01:34:14 CDT</option>
+<option value="2012-10-30 21:34:52"> Oct 30th, 2012 16:34:52 CDT</option>
+<option value="2012-10-31 06:38:21"> Oct 31st, 2012 01:38:21 CDT</option>
+<option value="2012-10-31 21:48:56"> Oct 31st, 2012 16:48:56 CDT</option>
+<option value="2012-11-01 06:34:10"> Nov 1st, 2012 01:34:10 CDT</option>
+<option value="2012-11-01 21:47:01"> Nov 1st, 2012 16:47:01 CDT</option>
+<option value="2012-11-02 06:46:37"> Nov 2nd, 2012 01:46:37 CDT</option>
+<option value="2012-11-02 21:50:09"> Nov 2nd, 2012 16:50:09 CDT</option>
+<option value="2012-11-03 06:51:46"> Nov 3rd, 2012 01:51:46 CDT</option>
+<option value="2012-11-03 21:47:59"> Nov 3rd, 2012 16:47:59 CDT</option>
+<option value="2012-11-04 06:33:36"> Nov 4th, 2012 01:33:36 CDT</option>
+<option value="2012-11-04 21:50:45"> Nov 4th, 2012 15:50:45 CST</option>
+<option value="2012-11-04 22:48:08"> Nov 4th, 2012 16:48:08 CST</option>
+<option value="2012-11-05 06:40:55"> Nov 5th, 2012 00:40:55 CST</option>
+<option value="2012-11-05 22:34:37"> Nov 5th, 2012 16:34:37 CST</option>
+<option value="2012-11-06 06:35:49"> Nov 6th, 2012 00:35:49 CST</option>
+<option value="2012-11-06 22:43:47"> Nov 6th, 2012 16:43:47 CST</option>
+<option value="2012-11-07 06:38:33"> Nov 7th, 2012 00:38:33 CST</option>
+<option value="2012-11-08 06:35:33"> Nov 8th, 2012 00:35:33 CST</option>
+<option value="2012-11-08 22:49:50"> Nov 8th, 2012 16:49:50 CST</option>
+<option value="2012-11-09 06:34:57"> Nov 9th, 2012 00:34:57 CST</option>
+<option value="2012-11-09 22:47:22"> Nov 9th, 2012 16:47:22 CST</option>
+<option value="2012-11-10 06:33:11"> Nov 10th, 2012 00:33:11 CST</option>
+<option value="2012-11-10 22:48:49"> Nov 10th, 2012 16:48:49 CST</option>
+<option value="2012-11-11 06:34:52"> Nov 11th, 2012 00:34:52 CST</option>
+<option value="2012-11-11 22:50:56"> Nov 11th, 2012 16:50:56 CST</option>
+<option value="2012-11-12 06:38:12"> Nov 12th, 2012 00:38:12 CST</option>
+<option value="2012-11-12 23:18:06"> Nov 12th, 2012 17:18:06 CST</option>
+<option value="2012-11-12 23:28:35"> Nov 12th, 2012 17:28:35 CST</option>
+<option value="2012-11-13 06:50:36"> Nov 13th, 2012 00:50:36 CST</option>
+<option value="2012-11-13 06:54:50"> Nov 13th, 2012 00:54:50 CST</option>
+<option value="2012-11-13 22:57:47"> Nov 13th, 2012 16:57:47 CST</option>
+<option value="2012-11-13 23:00:11"> Nov 13th, 2012 17:00:11 CST</option>
+<option value="2012-11-14 06:33:49"> Nov 14th, 2012 00:33:49 CST</option>
+<option value="2012-11-14 22:47:10"> Nov 14th, 2012 16:47:10 CST</option>
+<option value="2012-11-15 06:34:15"> Nov 15th, 2012 00:34:15 CST</option>
+<option value="2012-11-15 22:48:29"> Nov 15th, 2012 16:48:29 CST</option>
+<option value="2012-11-16 06:33:29"> Nov 16th, 2012 00:33:29 CST</option>
+<option value="2012-11-16 22:36:38"> Nov 16th, 2012 16:36:38 CST</option>
+<option value="2012-11-17 06:31:18"> Nov 17th, 2012 00:31:18 CST</option>
+<option value="2012-11-17 22:41:32"> Nov 17th, 2012 16:41:32 CST</option>
+<option value="2012-11-18 06:36:45"> Nov 18th, 2012 00:36:45 CST</option>
+<option value="2012-11-18 22:47:09"> Nov 18th, 2012 16:47:09 CST</option>
+<option value="2012-11-19 06:32:54"> Nov 19th, 2012 00:32:54 CST</option>
+<option value="2012-11-19 22:46:54"> Nov 19th, 2012 16:46:54 CST</option>
+<option value="2012-11-20 06:33:38"> Nov 20th, 2012 00:33:38 CST</option>
+<option value="2012-11-20 22:53:29"> Nov 20th, 2012 16:53:29 CST</option>
+<option value="2012-11-21 06:31:12"> Nov 21st, 2012 00:31:12 CST</option>
+<option value="2012-11-21 22:40:36"> Nov 21st, 2012 16:40:36 CST</option>
+<option value="2012-11-22 06:31:54"> Nov 22nd, 2012 00:31:54 CST</option>
+<option value="2012-11-22 22:37:37"> Nov 22nd, 2012 16:37:37 CST</option>
+<option value="2012-11-23 06:41:50"> Nov 23rd, 2012 00:41:50 CST</option>
+<option value="2012-11-23 22:37:30"> Nov 23rd, 2012 16:37:30 CST</option>
+<option value="2012-11-24 06:51:11"> Nov 24th, 2012 00:51:11 CST</option>
+<option value="2012-11-24 22:36:53"> Nov 24th, 2012 16:36:53 CST</option>
+<option value="2012-11-25 06:42:45"> Nov 25th, 2012 00:42:45 CST</option>
+<option value="2012-11-25 22:38:20"> Nov 25th, 2012 16:38:20 CST</option>
+<option value="2012-11-26 06:53:27"> Nov 26th, 2012 00:53:27 CST</option>
+<option value="2012-11-26 22:43:27"> Nov 26th, 2012 16:43:27 CST</option>
+<option value="2012-11-27 06:36:38"> Nov 27th, 2012 00:36:38 CST</option>
+<option value="2012-11-27 22:48:00"> Nov 27th, 2012 16:48:00 CST</option>
+<option value="2012-11-28 06:37:12"> Nov 28th, 2012 00:37:12 CST</option>
+<option value="2012-11-28 22:55:36"> Nov 28th, 2012 16:55:36 CST</option>
+<option value="2012-11-29 06:39:45"> Nov 29th, 2012 00:39:45 CST</option>
+<option value="2012-11-29 22:51:08"> Nov 29th, 2012 16:51:08 CST</option>
+<option value="2012-11-30 06:50:35"> Nov 30th, 2012 00:50:35 CST</option>
+<option value="2012-11-30 06:53:51"> Nov 30th, 2012 00:53:51 CST</option>
+<option value="2012-11-30 22:45:08"> Nov 30th, 2012 16:45:08 CST</option>
+<option value="2012-12-01 06:39:26"> Dec 1st, 2012 00:39:26 CST</option>
+<option value="2012-12-01 22:41:24"> Dec 1st, 2012 16:41:24 CST</option>
+<option value="2012-12-02 06:50:55"> Dec 2nd, 2012 00:50:55 CST</option>
+<option value="2012-12-02 06:52:24"> Dec 2nd, 2012 00:52:24 CST</option>
+<option value="2012-12-02 22:45:00"> Dec 2nd, 2012 16:45:00 CST</option>
+<option value="2012-12-03 06:37:48"> Dec 3rd, 2012 00:37:48 CST</option>
+<option value="2012-12-03 22:50:34"> Dec 3rd, 2012 16:50:34 CST</option>
+<option value="2012-12-04 06:51:33"> Dec 4th, 2012 00:51:33 CST</option>
+<option value="2012-12-04 22:49:29"> Dec 4th, 2012 16:49:29 CST</option>
+<option value="2012-12-05 06:46:53"> Dec 5th, 2012 00:46:53 CST</option>
+<option value="2012-12-05 22:47:44"> Dec 5th, 2012 16:47:44 CST</option>
+<option value="2012-12-06 06:34:55"> Dec 6th, 2012 00:34:55 CST</option>
+<option value="2012-12-06 22:51:57"> Dec 6th, 2012 16:51:57 CST</option>
+<option value="2012-12-07 06:36:26"> Dec 7th, 2012 00:36:26 CST</option>
+<option value="2012-12-07 13:09:28"> Dec 7th, 2012 07:09:28 CST</option>
+<option value="2012-12-07 22:53:01"> Dec 7th, 2012 16:53:01 CST</option>
+<option value="2012-12-08 06:48:38"> Dec 8th, 2012 00:48:38 CST</option>
+<option value="2012-12-08 13:36:40"> Dec 8th, 2012 07:36:40 CST</option>
+<option value="2012-12-08 22:48:24"> Dec 8th, 2012 16:48:24 CST</option>
+<option value="2012-12-09 06:36:22"> Dec 9th, 2012 00:36:22 CST</option>
+<option value="2012-12-09 22:47:02"> Dec 9th, 2012 16:47:02 CST</option>
+<option value="2012-12-10 06:50:45"> Dec 10th, 2012 00:50:45 CST</option>
+<option value="2012-12-10 09:52:55"> Dec 10th, 2012 03:52:55 CST</option>
+<option value="2012-12-10 22:50:43"> Dec 10th, 2012 16:50:43 CST</option>
+<option value="2012-12-11 06:33:31"> Dec 11th, 2012 00:33:31 CST</option>
+<option value="2012-12-11 22:46:35"> Dec 11th, 2012 16:46:35 CST</option>
+<option value="2012-12-12 06:48:12"> Dec 12th, 2012 00:48:12 CST</option>
+<option value="2012-12-12 22:48:33"> Dec 12th, 2012 16:48:33 CST</option>
+<option value="2012-12-13 06:50:26"> Dec 13th, 2012 00:50:26 CST</option>
+<option value="2012-12-13 06:59:10"> Dec 13th, 2012 00:59:10 CST</option>
+<option value="2012-12-13 22:48:42"> Dec 13th, 2012 16:48:42 CST</option>
+<option value="2012-12-14 06:35:43"> Dec 14th, 2012 00:35:43 CST</option>
+<option value="2012-12-14 22:48:45"> Dec 14th, 2012 16:48:45 CST</option>
+<option value="2012-12-15 06:33:51"> Dec 15th, 2012 00:33:51 CST</option>
+<option value="2012-12-15 22:59:37"> Dec 15th, 2012 16:59:37 CST</option>
+<option value="2012-12-16 06:35:35"> Dec 16th, 2012 00:35:35 CST</option>
+<option value="2012-12-16 22:52:36"> Dec 16th, 2012 16:52:36 CST</option>
+<option value="2012-12-17 06:39:42"> Dec 17th, 2012 00:39:42 CST</option>
+<option value="2012-12-17 22:32:50"> Dec 17th, 2012 16:32:50 CST</option>
+<option value="2012-12-18 06:36:11"> Dec 18th, 2012 00:36:11 CST</option>
+<option value="2012-12-18 22:51:47"> Dec 18th, 2012 16:51:47 CST</option>
+<option value="2012-12-18 22:51:59"> Dec 18th, 2012 16:51:59 CST</option>
+<option value="2012-12-19 06:34:20"> Dec 19th, 2012 00:34:20 CST</option>
+<option value="2012-12-19 22:49:38"> Dec 19th, 2012 16:49:38 CST</option>
+<option value="2012-12-20 06:37:52"> Dec 20th, 2012 00:37:52 CST</option>
+<option value="2012-12-20 22:57:49"> Dec 20th, 2012 16:57:49 CST</option>
+                </select>
+                </td>
+            </tr>
+            </form>
+            </table>
+
+            </td>
+                    </tr>
+        </table>
+
+        <hr />
+        <!-- No date specified -->
+<!-- 2012-12-20 22:57:49 -->
+
+<font size=4><b>
+These data are preliminary and have not undergone final quality control by the National Climatic Data Center (NCDC). Therefore, these data are subject to revision. Final and certified climate data can be accessed at the NCDC -
+<a href="http://www.ncdc.noaa.gov" target="_new" title="National Climatic Data Center (NCDC)">http://www.ncdc.noaa.gov</a>.
+</b></font>
+
+<h3>Climatological Report (Daily)</h3>
+<pre><font size=3>
+000
+CDUS43 KLOT 202257
+CLIORD
+
+
+CLIMATE REPORT
+NATIONAL WEATHER SERVICE CHICAGO IL
+451 PM CST THU DEC 20 2012
+
+
+...................................
+
+...THE CHICAGO-OHARE IL CLIMATE SUMMARY FOR DECEMBER 20 2012...
+VALID TODAY AS OF 0400 PM LOCAL TIME.
+
+CLIMATE NORMAL PERIOD 1981 TO 2010
+CLIMATE RECORD PERIOD 1871 TO 2012
+
+
+WEATHER ITEM   OBSERVED TIME   RECORD YEAR NORMAL DEPARTURE LAST
+                VALUE   (LST)  VALUE       VALUE  FROM      YEAR
+                                                  NORMAL
+..................................................................
+TEMPERATURE (F)
+ TODAY
+  MAXIMUM         49    210 PM  67    1877  33     16       39
+  MINIMUM         40    239 AM  -9    1963  19     21       36
+  AVERAGE         45                        26     19       38
+
+PRECIPITATION (IN)
+  TODAY            1.01          1.67 1895   0.06   0.95      T
+  MONTH TO DATE    1.93                      1.58   0.35     2.08
+  SINCE DEC 1      1.93                      1.58   0.35     2.08
+  SINCE JAN 1     26.63                     36.22  -9.59    49.26
+
+SNOWFALL (IN)
+  TODAY            0.0          11.0  1960   0.3   -0.3      0.0
+                                      2002
+  MONTH TO DATE    T                         4.9   -4.9      1.7
+  SINCE DEC 1      T                         4.9   -4.9      1.7
+  SINCE JUL 1      T                         6.3   -6.3      1.7
+
+DEGREE DAYS
+ HEATING
+  TODAY           20                        39    -19       27
+  MONTH TO DATE  479                       717   -238      580
+  SINCE DEC 1    479                       717   -238      580
+  SINCE JUL 1   1729                      1973   -244     1643
+
+ COOLING
+  TODAY            0                         0      0        0
+  MONTH TO DATE    0                         0      0        0
+  SINCE DEC 1      0                         0      0        0
+  SINCE JAN 1   1324                       843    481     1036
+..................................................................
+
+
+WIND (MPH)
+  HIGHEST WIND SPEED    24   HIGHEST WIND DIRECTION    SW (210)
+  HIGHEST GUST SPEED    29   HIGHEST GUST DIRECTION    SW (210)
+  AVERAGE WIND SPEED    14.8
+
+
+SKY COVER
+  POSSIBLE SUNSHINE  MM
+  AVERAGE SKY COVER 0.9
+
+
+WEATHER CONDITIONS
+ THE FOLLOWING WEATHER WAS RECORDED TODAY.
+  HEAVY RAIN
+  RAIN
+  LIGHT RAIN
+  FOG
+
+
+RELATIVE HUMIDITY (PERCENT)
+ HIGHEST   100           200 PM
+ LOWEST     86           100 AM
+ AVERAGE    93
+
+..........................................................
+
+
+THE CHICAGO-OHARE IL CLIMATE NORMALS FOR TOMORROW
+                         NORMAL    RECORD    YEAR
+ MAXIMUM TEMPERATURE (F)   33        62      1967
+ MINIMUM TEMPERATURE (F)   19       -14      1989
+
+
+SUNRISE AND SUNSET
+DECEMBER 20 2012......SUNRISE   716 AM CST   SUNSET   423 PM CST
+DECEMBER 21 2012......SUNRISE   716 AM CST   SUNSET   424 PM CST
+
+
+-  INDICATES NEGATIVE NUMBERS.
+R  INDICATES RECORD WAS SET OR TIED.
+MM INDICATES DATA IS MISSING.
+T  INDICATES TRACE AMOUNT.
+
+
+
+
+<hr />
+
+
+
+
+</font></pre>
+
+
+<font size=4>
+The U.S. Naval Observatory (USNO) computes astronomical data. Therefore, the NWS does not record, certify, or authenticate astronomical data. Computed times of sunrise, sunset, moonrise, moonset; and twilight, moon phases and other astronomical data are available from USNO's Astronomical Applications Department (http://www.usno.navy.mil). See <a href="http://weather.gov/cgi-bin/nwsexit.pl?url=http://www.usno.navy.mil/USNO/astronomical-applications/astronomical-information-center/litigation">http://www.usno.navy.mil/USNO/astronomical-applications/astronomical-information-center/litigation</a> for information on using these data for legal purposes.</font>
+
+
+    <!-- Page loaded in 0.081 seconds -->
+
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!-- PIL: 'CLI' Site ID: 'ORD' Recent: 'yes' Date: '' Specdate: '' -->
+
+<html>
+<head>
+    <title>National Weather Service - Climate Data</title>
+    <style>
+    select {
+        background-color: #FFFFB3;
+    }
+    </style>
+    <script language="JavaScript">
+    function swapURL() {
+        // make sure a new date was chosen
+        if (document.myProd.specdate.options[document.myProd.specdate.selectedIndex].value != "") {
+            // all good
+            // return true;
+            document.myProd.submit();
+        } else {
+            alert("Please chhose a valid date/time first.");
+            return false;
+        }
+    }
+    </script>
+</head>
+
+        <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td bgcolor="#A4A9FF">
+
+            <table cellspacing="0" cellpadding="10" border="1" bgcolor="#A4A9FF">
+            <form name="myProd" action="/climate/getclimate.php" method="get">
+            <input type="hidden" name="date" value="" />
+            <input type="hidden" name="wfo" value="lot" />
+            <input type="hidden" name="sid" value="ORD" />
+            <input type="hidden" name="pil" value="CLI" />
+            <input type="hidden" name="recent" value="yes" />
+            <tr>
+                <td>
+                <select name="specdate" onChange="return swapURL()">
+                    <option value="" selected> Select Other Date</option>
+                    <option value="2013-09-12 06:38:39"> Sep 12th, 2013 01:38:39 CDT</option>
+<option value="2013-09-12 21:47:11"> Sep 12th, 2013 16:47:11 CDT</option>
+<option value="2013-09-13 06:33:37"> Sep 13th, 2013 01:33:37 CDT</option>
+<option value="2013-09-13 21:41:11"> Sep 13th, 2013 16:41:11 CDT</option>
+<option value="2013-09-14 06:41:54"> Sep 14th, 2013 01:41:54 CDT</option>
+<option value="2013-09-14 21:47:46"> Sep 14th, 2013 16:47:46 CDT</option>
+<option value="2013-09-15 06:35:23"> Sep 15th, 2013 01:35:23 CDT</option>
+<option value="2013-09-15 21:46:38"> Sep 15th, 2013 16:46:38 CDT</option>
+<option value="2013-09-16 06:34:56"> Sep 16th, 2013 01:34:56 CDT</option>
+<option value="2013-09-16 21:42:00"> Sep 16th, 2013 16:42:00 CDT</option>
+<option value="2013-09-17 06:49:36"> Sep 17th, 2013 01:49:36 CDT</option>
+<option value="2013-09-17 21:34:05"> Sep 17th, 2013 16:34:05 CDT</option>
+<option value="2013-09-18 06:33:15"> Sep 18th, 2013 01:33:15 CDT</option>
+<option value="2013-09-18 21:45:55"> Sep 18th, 2013 16:45:55 CDT</option>
+<option value="2013-09-19 06:46:42"> Sep 19th, 2013 01:46:42 CDT</option>
+<option value="2013-09-19 21:47:07"> Sep 19th, 2013 16:47:07 CDT</option>
+<option value="2013-09-20 06:38:17"> Sep 20th, 2013 01:38:17 CDT</option>
+<option value="2013-09-20 21:33:00"> Sep 20th, 2013 16:33:00 CDT</option>
+<option value="2013-09-21 06:38:27"> Sep 21st, 2013 01:38:27 CDT</option>
+<option value="2013-09-21 21:41:49"> Sep 21st, 2013 16:41:49 CDT</option>
+<option value="2013-09-22 06:36:31"> Sep 22nd, 2013 01:36:31 CDT</option>
+<option value="2013-09-22 21:42:34"> Sep 22nd, 2013 16:42:34 CDT</option>
+<option value="2013-09-23 06:36:26"> Sep 23rd, 2013 01:36:26 CDT</option>
+<option value="2013-09-23 21:43:06"> Sep 23rd, 2013 16:43:06 CDT</option>
+<option value="2013-09-24 06:35:25"> Sep 24th, 2013 01:35:25 CDT</option>
+<option value="2013-09-24 21:47:52"> Sep 24th, 2013 16:47:52 CDT</option>
+<option value="2013-09-25 06:38:29"> Sep 25th, 2013 01:38:29 CDT</option>
+<option value="2013-09-25 21:49:27"> Sep 25th, 2013 16:49:27 CDT</option>
+<option value="2013-09-26 06:36:20"> Sep 26th, 2013 01:36:20 CDT</option>
+<option value="2013-09-26 21:44:01"> Sep 26th, 2013 16:44:01 CDT</option>
+<option value="2013-09-27 06:32:38"> Sep 27th, 2013 01:32:38 CDT</option>
+<option value="2013-09-27 21:46:08"> Sep 27th, 2013 16:46:08 CDT</option>
+<option value="2013-09-28 06:32:28"> Sep 28th, 2013 01:32:28 CDT</option>
+<option value="2013-09-28 21:50:14"> Sep 28th, 2013 16:50:14 CDT</option>
+<option value="2013-09-29 06:37:33"> Sep 29th, 2013 01:37:33 CDT</option>
+<option value="2013-09-29 21:45:36"> Sep 29th, 2013 16:45:36 CDT</option>
+<option value="2013-09-30 06:37:20"> Sep 30th, 2013 01:37:20 CDT</option>
+<option value="2013-09-30 21:44:05"> Sep 30th, 2013 16:44:05 CDT</option>
+<option value="2013-10-01 06:32:22"> Oct 1st, 2013 01:32:22 CDT</option>
+<option value="2013-10-01 21:34:31"> Oct 1st, 2013 16:34:31 CDT</option>
+<option value="2013-10-02 06:33:02"> Oct 2nd, 2013 01:33:02 CDT</option>
+<option value="2013-10-02 21:41:15"> Oct 2nd, 2013 16:41:15 CDT</option>
+<option value="2013-10-03 06:32:47"> Oct 3rd, 2013 01:32:47 CDT</option>
+<option value="2013-10-03 21:39:12"> Oct 3rd, 2013 16:39:12 CDT</option>
+<option value="2013-10-04 06:39:39"> Oct 4th, 2013 01:39:39 CDT</option>
+<option value="2013-10-04 21:44:11"> Oct 4th, 2013 16:44:11 CDT</option>
+<option value="2013-10-05 06:39:20"> Oct 5th, 2013 01:39:20 CDT</option>
+<option value="2013-10-05 21:41:03"> Oct 5th, 2013 16:41:03 CDT</option>
+<option value="2013-10-06 06:40:25"> Oct 6th, 2013 01:40:25 CDT</option>
+<option value="2013-10-06 21:50:02"> Oct 6th, 2013 16:50:02 CDT</option>
+<option value="2013-10-07 06:42:20"> Oct 7th, 2013 01:42:20 CDT</option>
+<option value="2013-10-07 21:44:48"> Oct 7th, 2013 16:44:48 CDT</option>
+<option value="2013-10-08 06:39:23"> Oct 8th, 2013 01:39:23 CDT</option>
+<option value="2013-10-08 21:44:46"> Oct 8th, 2013 16:44:46 CDT</option>
+<option value="2013-10-09 06:36:19"> Oct 9th, 2013 01:36:19 CDT</option>
+<option value="2013-10-09 21:47:37"> Oct 9th, 2013 16:47:37 CDT</option>
+<option value="2013-10-10 06:36:21"> Oct 10th, 2013 01:36:21 CDT</option>
+<option value="2013-10-10 21:35:32"> Oct 10th, 2013 16:35:32 CDT</option>
+<option value="2013-10-11 06:34:34"> Oct 11th, 2013 01:34:34 CDT</option>
+<option value="2013-10-11 21:39:39"> Oct 11th, 2013 16:39:39 CDT</option>
+<option value="2013-10-12 06:36:49"> Oct 12th, 2013 01:36:49 CDT</option>
+<option value="2013-10-12 21:40:32"> Oct 12th, 2013 16:40:32 CDT</option>
+<option value="2013-10-13 06:36:33"> Oct 13th, 2013 01:36:33 CDT</option>
+<option value="2013-10-13 21:40:23"> Oct 13th, 2013 16:40:23 CDT</option>
+<option value="2013-10-14 06:34:22"> Oct 14th, 2013 01:34:22 CDT</option>
+<option value="2013-10-14 21:38:12"> Oct 14th, 2013 16:38:12 CDT</option>
+<option value="2013-10-15 06:33:58"> Oct 15th, 2013 01:33:58 CDT</option>
+<option value="2013-10-15 21:34:01"> Oct 15th, 2013 16:34:01 CDT</option>
+<option value="2013-10-16 06:37:18"> Oct 16th, 2013 01:37:18 CDT</option>
+<option value="2013-10-16 21:44:24"> Oct 16th, 2013 16:44:24 CDT</option>
+<option value="2013-10-17 06:40:45"> Oct 17th, 2013 01:40:45 CDT</option>
+<option value="2013-10-17 21:42:32"> Oct 17th, 2013 16:42:32 CDT</option>
+<option value="2013-10-18 06:40:12"> Oct 18th, 2013 01:40:12 CDT</option>
+<option value="2013-10-18 21:39:31"> Oct 18th, 2013 16:39:31 CDT</option>
+<option value="2013-10-19 06:33:16"> Oct 19th, 2013 01:33:16 CDT</option>
+<option value="2013-10-19 21:44:11"> Oct 19th, 2013 16:44:11 CDT</option>
+<option value="2013-10-20 06:35:28"> Oct 20th, 2013 01:35:28 CDT</option>
+<option value="2013-10-20 21:37:01"> Oct 20th, 2013 16:37:01 CDT</option>
+<option value="2013-10-21 06:50:19"> Oct 21st, 2013 01:50:19 CDT</option>
+<option value="2013-10-21 09:19:34"> Oct 21st, 2013 04:19:34 CDT</option>
+<option value="2013-10-21 21:47:25"> Oct 21st, 2013 16:47:25 CDT</option>
+<option value="2013-10-22 06:33:53"> Oct 22nd, 2013 01:33:53 CDT</option>
+<option value="2013-10-22 21:46:37"> Oct 22nd, 2013 16:46:37 CDT</option>
+<option value="2013-10-23 06:35:57"> Oct 23rd, 2013 01:35:57 CDT</option>
+<option value="2013-10-23 21:51:01"> Oct 23rd, 2013 16:51:01 CDT</option>
+<option value="2013-10-24 06:44:59"> Oct 24th, 2013 01:44:59 CDT</option>
+<option value="2013-10-24 21:46:29"> Oct 24th, 2013 16:46:29 CDT</option>
+<option value="2013-10-25 06:33:52"> Oct 25th, 2013 01:33:52 CDT</option>
+<option value="2013-10-25 21:34:49"> Oct 25th, 2013 16:34:49 CDT</option>
+<option value="2013-10-26 06:33:20"> Oct 26th, 2013 01:33:20 CDT</option>
+<option value="2013-10-26 21:32:35"> Oct 26th, 2013 16:32:35 CDT</option>
+<option value="2013-10-27 06:45:58"> Oct 27th, 2013 01:45:58 CDT</option>
+<option value="2013-10-27 21:39:47"> Oct 27th, 2013 16:39:47 CDT</option>
+<option value="2013-10-28 06:41:17"> Oct 28th, 2013 01:41:17 CDT</option>
+<option value="2013-10-28 21:38:58"> Oct 28th, 2013 16:38:58 CDT</option>
+<option value="2013-10-29 06:34:10"> Oct 29th, 2013 01:34:10 CDT</option>
+<option value="2013-10-29 21:33:54"> Oct 29th, 2013 16:33:54 CDT</option>
+<option value="2013-10-30 06:37:39"> Oct 30th, 2013 01:37:39 CDT</option>
+<option value="2013-10-30 21:46:36"> Oct 30th, 2013 16:46:36 CDT</option>
+<option value="2013-10-31 06:34:33"> Oct 31st, 2013 01:34:33 CDT</option>
+<option value="2013-10-31 21:47:27"> Oct 31st, 2013 16:47:27 CDT</option>
+<option value="2013-11-01 06:47:31"> Nov 1st, 2013 01:47:31 CDT</option>
+<option value="2013-11-01 21:45:25"> Nov 1st, 2013 16:45:25 CDT</option>
+<option value="2013-11-02 06:32:42"> Nov 2nd, 2013 01:32:42 CDT</option>
+<option value="2013-11-02 06:36:14"> Nov 2nd, 2013 01:36:14 CDT</option>
+<option value="2013-11-02 21:45:47"> Nov 2nd, 2013 16:45:47 CDT</option>
+<option value="2013-11-03 06:50:16"> Nov 3rd, 2013 01:50:16 CDT</option>
+<option value="2013-11-03 08:22:58"> Nov 3rd, 2013 02:22:58 CST</option>
+<option value="2013-11-03 16:36:43"> Nov 3rd, 2013 10:36:43 CST</option>
+<option value="2013-11-03 22:43:52"> Nov 3rd, 2013 16:43:52 CST</option>
+<option value="2013-11-04 06:42:51"> Nov 4th, 2013 00:42:51 CST</option>
+<option value="2013-11-04 22:35:47"> Nov 4th, 2013 16:35:47 CST</option>
+<option value="2013-11-05 06:32:27"> Nov 5th, 2013 00:32:27 CST</option>
+<option value="2013-11-05 22:37:08"> Nov 5th, 2013 16:37:08 CST</option>
+<option value="2013-11-06 06:44:48"> Nov 6th, 2013 00:44:48 CST</option>
+<option value="2013-11-06 22:36:46"> Nov 6th, 2013 16:36:46 CST</option>
+<option value="2013-11-07 06:31:08"> Nov 7th, 2013 00:31:08 CST</option>
+<option value="2013-11-07 22:51:59"> Nov 7th, 2013 16:51:59 CST</option>
+<option value="2013-11-08 06:34:31"> Nov 8th, 2013 00:34:31 CST</option>
+<option value="2013-11-08 22:39:10"> Nov 8th, 2013 16:39:10 CST</option>
+<option value="2013-11-09 06:35:37"> Nov 9th, 2013 00:35:37 CST</option>
+<option value="2013-11-09 22:43:21"> Nov 9th, 2013 16:43:21 CST</option>
+<option value="2013-11-10 06:35:08"> Nov 10th, 2013 00:35:08 CST</option>
+<option value="2013-11-10 22:40:23"> Nov 10th, 2013 16:40:23 CST</option>
+                </select>
+                </td>
+            </tr>
+            </form>
+            </table>
+
+            </td>
+                    </tr>
+        </table>
+
+        <hr />
+        <!-- No date specified -->
+<!-- 2013-11-10 22:40:23 -->
+
+<font size=4><b>
+These data are preliminary and have not undergone final quality control by the National Climatic Data Center (NCDC). Therefore, these data are subject to revision. Final and certified climate data can be accessed at the NCDC -
+<a href="http://www.ncdc.noaa.gov" target="_new" title="National Climatic Data Center (NCDC)">http://www.ncdc.noaa.gov</a>.
+</b></font>
+
+<h3>Climatological Report (Daily)</h3>
+<pre><font size=3>
+000
+CDUS43 KLOT 102240
+CLIORD
+
+
+CLIMATE REPORT
+NATIONAL WEATHER SERVICE CHICAGO IL
+437 PM CST SUN NOV 10 2013
+
+
+...................................
+
+...THE CHICAGO-OHARE IL CLIMATE SUMMARY FOR NOVEMBER 10 2013...
+VALID TODAY AS OF 0400 PM LOCAL TIME.
+
+CLIMATE NORMAL PERIOD 1981 TO 2010
+CLIMATE RECORD PERIOD 1871 TO 2013
+
+
+WEATHER ITEM   OBSERVED TIME   RECORD YEAR NORMAL DEPARTURE LAST
+                VALUE   (LST)  VALUE       VALUE  FROM      YEAR
+                                                  NORMAL
+..................................................................
+TEMPERATURE (F)
+ TODAY
+  MAXIMUM         49    224 PM  71    1949  51     -2       66
+  MINIMUM         35    709 AM  18    1986  35      0       50
+  AVERAGE         42                        43     -1       58
+
+PRECIPITATION (IN)
+  TODAY            0.00          2.37 1995   0.10  -0.10     0.22
+  MONTH TO DATE    0.73                      1.02  -0.29     0.38
+  SINCE SEP 1      6.42                      7.38  -0.96     5.29
+  SINCE JAN 1     38.79                     32.51   6.28    24.13
+
+SNOWFALL (IN)
+  TODAY            0.0           0.4  1991   0.0    0.0      0.0
+                                      1976
+  MONTH TO DATE    0.0                       0.1   -0.1      0.0
+  SINCE SEP 1      T                         0.4   -0.4      0.0
+  SINCE JUL 1      T                         0.4   -0.4      0.0
+
+DEGREE DAYS
+ HEATING
+  TODAY           23                        22      1        7
+  MONTH TO DATE  202                       199      3      223
+  SINCE SEP 1    655                       701    -46      745
+  SINCE JUL 1    666                       714    -48      745
+
+ COOLING
+  TODAY            0                         0      0        0
+  MONTH TO DATE    0                         0      0        0
+  SINCE SEP 1    168                       103     65       93
+  SINCE JAN 1    933                       843     90     1324
+..................................................................
+
+
+WIND (MPH)
+  HIGHEST WIND SPEED    20   HIGHEST WIND DIRECTION     W (280)
+  HIGHEST GUST SPEED    28   HIGHEST GUST DIRECTION     W (280)
+  AVERAGE WIND SPEED    11.4
+
+
+SKY COVER
+  POSSIBLE SUNSHINE  MM
+  AVERAGE SKY COVER 0.2
+
+
+WEATHER CONDITIONS
+ THE FOLLOWING WEATHER WAS RECORDED TODAY.
+  NO SIGNIFICANT WEATHER WAS OBSERVED.
+
+
+RELATIVE HUMIDITY (PERCENT)
+ HIGHEST    70           500 AM
+ LOWEST     46           300 PM
+ AVERAGE    58
+
+..........................................................
+
+
+THE CHICAGO-OHARE IL CLIMATE NORMALS FOR TOMORROW
+                         NORMAL    RECORD    YEAR
+ MAXIMUM TEMPERATURE (F)   51        74      1964
+                                             1911
+ MINIMUM TEMPERATURE (F)   35        15      1950
+
+
+SUNRISE AND SUNSET
+NOVEMBER 10 2013......SUNRISE   636 AM CST   SUNSET   435 PM CST
+NOVEMBER 11 2013......SUNRISE   637 AM CST   SUNSET   434 PM CST
+
+
+-  INDICATES NEGATIVE NUMBERS.
+R  INDICATES RECORD WAS SET OR TIED.
+MM INDICATES DATA IS MISSING.
+T  INDICATES TRACE AMOUNT.
+
+
+
+
+<hr />
+
+
+
+
+</font></pre>
+
+
+<font size=4>
+The U.S. Naval Observatory (USNO) computes astronomical data. Therefore, the NWS does not record, certify, or authenticate astronomical data. Computed times of sunrise, sunset, moonrise, moonset; and twilight, moon phases and other astronomical data are available from USNO's Astronomical Applications Department (http://www.usno.navy.mil). See <a href="http://weather.gov/cgi-bin/nwsexit.pl?url=http://www.usno.navy.mil/USNO/astronomical-applications/astronomical-information-center/litigation">http://www.usno.navy.mil/USNO/astronomical-applications/astronomical-information-center/litigation</a> for information on using these data for legal purposes.</font>
+
+
+    <!-- Page loaded in 0.312 seconds -->
+
+
+</body>
+</html>
