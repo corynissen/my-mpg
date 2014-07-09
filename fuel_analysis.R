@@ -13,7 +13,8 @@ if(!file.exists("Observed")){
 system(paste("mv ~/Downloads/fuelups.csv", getwd()))
 
 fuel <- read.csv("fuelups.csv", stringsAsFactors=F)
-fuel$date <- parse_date_time(fuel$fuelup_date, "ymd-hm")
+fuel$date <- parse_date_time(fuel$fuelup_date, "ymd")
+fuel <- subset(fuel, mpg > 0)
 
 start.date <- min(fuel$date)
 end.date <- max(fuel$date)
@@ -107,3 +108,9 @@ g <- gtable_add_grob(g, alab, pp$t, length(g$widths) - 1, pp$b)
 jpeg(filename="tempANDmpg.jpg", width=800, height=600)
 grid.draw(g)
 dev.off()
+
+# create blog post
+library(markdown)
+library(knitr)
+knit("mpg_blog_post.Rmd")
+markdownToHTML("mpg_blog_post.md", "mpg_blog_post.html", fragment.only = TRUE)

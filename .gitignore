@@ -8,3 +8,6 @@
 
 # just some scp code to get my temp data off of my server
 getObserved.txt
+unnamed-chunk*
+*.html
+*-*-*
